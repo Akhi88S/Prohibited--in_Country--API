@@ -5,22 +5,16 @@ var detailSchema = new mongoose.Schema({
         type: String,
         required: 'Name cannot be blank!'
     },
-    Allowed: [{
+    NotAllowed: [{
         type: String,
         required: 'Allowed cannot be blank!'
     }],
-    Notallowed: [{
-        type: String,
-        required: 'Not Allowed cannot be blank!'
-    }],
+    
     Additionalinfo: [{
         type: String,
         required: 'Not Allowed cannot be blank!'
     }],
-    Otherinfo: [{
-        type: String,
-        required: 'Not Allowed cannot be blank!'
-    }]
+    
     
 });
 
