@@ -2,6 +2,9 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 3000;
     bodyParser = require('body-parser');
+    cors = require('cors')
+
+app.use(cors()) // Use this after the variable declaration
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 var detailsroutes= require("./routes/details");
