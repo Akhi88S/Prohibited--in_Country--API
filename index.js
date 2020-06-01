@@ -16,4 +16,3 @@ var app_host = process.env.YOUR_HOST || '0.0.0.0';
 app.listen(app_port, app_host, function() {
   console.log('Listening on port %d', app_port);
 });
-
